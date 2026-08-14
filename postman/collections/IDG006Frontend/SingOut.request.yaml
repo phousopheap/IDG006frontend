@@ -1,0 +1,9 @@
+$kind: http-request
+name: SingOut
+url: https://testcertificate-api.ultralink.cloud/api/signout
+method: POST
+auth:
+  type: bearer
+  credentials:
+    token: 565|oi6SPqOuxWrNDg1XdIt7cv3mshmZ1sVxdGUhcYH6247bfaeb
+order: 3351071684264422

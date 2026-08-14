@@ -1,0 +1,4 @@
+name: IDG006Froned
+values:
+  - key: APP_API_URL
+    value: ''

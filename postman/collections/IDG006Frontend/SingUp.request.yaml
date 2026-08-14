@@ -1,0 +1,20 @@
+$kind: http-request
+name: SingUp
+url: https://testcertificate-api.ultralink.cloud/api/signup
+method: POST
+headers:
+  Accept: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Phou Sopheap\",\r
+
+    \  \"email\": \"phousopheap@gmail.com\",\r
+
+    \  \"password\": \"sopheap\",\r
+
+    \  \"password_confirmation\": \"sopheap\"\r
+
+    }"
+order: 1786502878095

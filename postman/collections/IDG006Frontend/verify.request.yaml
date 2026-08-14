@@ -1,0 +1,9 @@
+$kind: http-request
+name: verify
+url: https://testcertificate-api.ultralink.cloud/api/verify
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: 565|oi6SPqOuxWrNDg1XdIt7cv3mshmZ1sVxdGUhcYH6247bfaeb
+order: 3366626724486834
