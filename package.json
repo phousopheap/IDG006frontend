@@ -13,11 +13,13 @@
     "admin-lte": "^3.2.0",
     "axios": "^1.19.0",
     "bootstrap": "^4.6.2",
+    "flag-icons": "^7.5.0",
     "husky": "^9.1.7",
     "icheck-bootstrap": "^3.0.1",
     "jquery": "^3.7.1",
     "pinia": "^4.0.3",
     "vue": "^3.5.32",
+    "vue-i18n": "^11.4.9",
     "vue-router": "^5.1.0"
   },
   "devDependencies": {

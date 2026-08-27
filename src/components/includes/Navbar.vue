@@ -7,13 +7,34 @@
             </li>
         </ul>
 
+        
+
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown show">
+        <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="true">
+          <i class="far fa-bell"></i>
+          
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right show" style="left: inherit; right: 0px;">
+          
+          <div class="dropdown-divider"></div>
+          <a @click="swithchLanguage('kh')" href="#" class="dropdown-item">
+            <i class="fi fi-kh mr-2"></i> Khmer
+    
+          </a>
+          <div class="dropdown-divider"></div>
+          <a @click="swithchLanguage('en')" href="#" class="dropdown-item">
+            <i class="fi fi-us mr-2"></i> English
+          </a>
+        </div>
+      </li>
             <li class="nav-item">
                 <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                     <i class="fas fa-expand-arrows-alt"></i>
                 </a>
             </li>
+        
 
             <li class="nav-item">
                 <a @click="signOut" class="nav-link" role="button">
@@ -44,4 +65,10 @@ async function signOut() {
         }
     });
 }
+import { useI18n } from 'vue-i18n';
+const { locale } = useI18n({ useScope: 'global' });
+function swithchLanguage(lang) {
+    locale.value = lang;
+}
+
 </script>

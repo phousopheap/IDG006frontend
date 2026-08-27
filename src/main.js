@@ -9,10 +9,40 @@ import { useUserStore } from '@/stores/user';
 import { apiVerify } from '@/functions/api/auth';
 import { createPinia } from 'pinia'
 import axios from 'axios';
+import {createI18n} from 'vue-i18n'
+
+const i18n = createI18n({
+    locale: 'kh',
+    fallbackLocale: 'en',
+    messages: {
+        en: {
+            // English messages
+            messages: {
+                welcome: 'Welcome',
+                signIn: 'Sign In',
+                signOut: 'Sign Out',
+                dashboard: 'Dashboard',
+                profile: 'Profile',
+                settings: 'Settings'
+            }
+        },
+        kh: {
+            // Khmer messages
+            messages: {
+                welcome: 'សួស្តី',
+                signIn: 'ចុះឈ្មោះ',
+                signOut: 'ចាកចេញ',
+                dashboard: 'ផ្ទាំងគ្រប់គ្រង',
+                profile: 'ប្រវត្តិរបស់ខ្ញុំ',
+                settings: 'ការកំណត់'
+            }
+        }
+    }
+});
 
 const pinia = createPinia();
 
-createApp(App).use(router).use(pinia).mount('#app');
+createApp(App).use(router).use(i18n).use(pinia).mount('#app');
 
 const userStore = useUserStore();
 
